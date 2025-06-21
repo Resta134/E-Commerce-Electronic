@@ -9,7 +9,7 @@ class HomepageController extends Controller
     public function index() 
     {  
         $title = 'Homepage'; 
-        $products = Products::all();
+        // $products = Products::all();
 
         return view('web.homepage', ['title' => $title]); 
     } 

@@ -1,55 +1,49 @@
 <div>
-    <nav class="navbar navbar-dark navbar-expand-lg" style="background-color: #020f5e;">
-        <div class="container">
+    <nav class="navbar navbar-dark navbar-expand-lg p-4" style="background-color: #020f5e;">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a href="isi"><img src="{{ asset('img/logo.png') }}" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> </a>
             <a class="navbar-brand" href="#">Electronic Handphone</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse justify-content-end gap-4" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav gap-3">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/product') }}">Product</a>
+                        <a class="nav-link" href="/allproduct">Product</a>
                     </li>
+                    <!-- kategori -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categories
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item bg-primary text-white" href="https://www.apple.com/id/iphone/">APPLE</a></li>
+                            <li><a class="dropdown-item bg-primary text-white" href="https://www.samsung.com/id/smartphones/">SAMSUNG</a></li>
+                            <li><a class="dropdown-item bg-primary text-white" href="https://www.vivo.com/id/">VIVO</a></li>
+                            <li><a class="dropdown-item bg-primary text-white" href="https://www.xiaomi.com/id/">XIAOMI</a></li>
+                            <li><a class="dropdown-item bg-primary text-white" href="https://www.realme.com/id/">REALME</a></li>
+                        </ul>
+                    </li>
+                    <!-- kolom & button search -->
+                    <li class="nav-item">
+                        <form class="d-flex" action="{{ url('/search') }}" method="GET">
+                            <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit">Search</button>
+                        </form>
+                    </li>
+                    <!-- login -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url('/login') }}">Login</a>
+                    </li>
+                    <!-- logo keranjang buat cart -->
+                    <li class="nav-item ">
+                        <a class="nav-link" href="{{ url('/cart') }}">
+                            <i class="fas fa-shopping-cart"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Search</a>
-                    </li>
                 </ul>
-
-                <form class="d-flex gap-4 align-items-center">
-                    @auth('customer')
-                        <div class="dropdown">
-                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                {{ Auth::guard('customer')->user()->name }}
-                            </a>
-
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Profil</a></li>
-                                <li>
-                                    <form method="POST" action="{{ route('customer.logout') }}">
-                                        @csrf
-                                        <button class="dropdown-item" type="submit">Logout</button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </div>
-                    @else
-                        <a href="{{ route('customer.login') }}" class="btn btn-success" type="button">Login</a>
-                    @endauth
-
-                    <a href="#">
-                        <i class="fa-solid fa-bag-shopping" style="color: white;"></i>
-                    </a>
-                </form>
             </div>
         </div>
-    </nav>    
+    </nav>
 </div>
