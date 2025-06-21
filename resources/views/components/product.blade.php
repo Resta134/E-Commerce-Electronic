@@ -7,9 +7,9 @@ $categories = ['APPLE', 'SAMSUNG', 'VIVO', 'XIAOMI', 'REALME'];
 $dummyProducts = [
 ['name' => 'iPhone 13', 'price' => 13999000, 'image' => 'https://www.apple.com/v/iphone/home/cb/images/overview/select/iphone_16pro__erw9alves2qa_xlarge_2x.png', 'category' => 'APPLE'],
 ['name' => 'Samsung S25 Ultra', 'price' => 24999000, 'image' => 'https://images.samsung.com/is/image/samsung/p6pim/id/2501/gallery/id-galaxy-s25-s938-sm-s938bzbcxid-thumb-544701608?$310_N_PNG$', 'category' => 'SAMSUNG'],
-['name' => 'Vivo X80 Pro', 'price' => 12999000, 'image' => 'https://www.vivo.com/id/products/x80pro/images/x80pro-hero.png', 'category' => 'VIVO'],
+['name' => 'Vivo X80 Pro', 'price' => 12999000, 'image' => 'https://th.bing.com/th/id/OIP.W7bzJOKwv7eDZiDOWJdDwgHaHa?rs=1&pid=ImgDetMain', 'category' => 'VIVO'],
 ['name' => 'Xiaomi 12 Pro', 'price' => 11999000, 'image' => 'https://www.mi.com/global/static/img/phone/12pro/12pro-hero.png', 'category' => 'XIAOMI'],
-['name' => 'Realme GT2 Pro', 'price' => 10999000, 'image' => 'https://www.realme.com/id/products/gt2-pro/images/gt2-pro-hero.png', 'category' => 'REALME'],
+['name' => 'Realme GT7 Pro', 'price' => 10999000, 'image' => 'https://image01.realme.net/general/20250522/17478892761986a7207924f9449b59872dd5a19aed71c.png.webp?width=1080&height=1080&size=866353', 'category' => 'REALME'],
 ['name' => 'iPhone 14 Pro', 'price' => 17999000, 'image' => 'https://www.apple.com/v/iphone/home/cb/images/overview/select/iphone_16pro__erw9alves2qa_xlarge_2x.png', 'category' => 'APPLE'],
 ['name' => 'Samsung Galaxy Z Fold4', 'price' => 29999000 , 'image' => 'https://images.samsung.com/is/image/samsung/p6pim/id/2501/gallery/id-galaxy-zfold4-f936-sm-f936bzbcxid-thumb-544701608?$310_N_PNG$', 'category' => 'SAMSUNG'],
 ['name' => 'Vivo V23 Pro', 'price' => 15999000, 'image' => 'https://www.vivo.com/id/products/v23pro/images/v23pro-hero.png', 'category' => 'VIVO'],

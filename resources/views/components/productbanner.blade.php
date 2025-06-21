@@ -5,9 +5,9 @@ $categories = ['APPLE', 'SAMSUNG', 'VIVO', 'XIAOMI', 'REALME'];
 $dummyProducts = [
 ['name' => 'iPhone 13', 'price' => 13999000, 'image' => 'https://www.apple.com/v/iphone/home/cb/images/overview/select/iphone_16pro__erw9alves2qa_xlarge_2x.png', 'category' => 'APPLE'],
 ['name' => 'Samsung S25 Ultra', 'price' => 24999000, 'image' => 'https://images.samsung.com/is/image/samsung/p6pim/id/2501/gallery/id-galaxy-s25-s938-sm-s938bzbcxid-thumb-544701608?$310_N_PNG$', 'category' => 'SAMSUNG'],
-['name' => 'Vivo X80 Pro', 'price' => 12999000, 'image' => 'https://www.vivo.com/id/products/x80pro/images/x80pro-hero.png', 'category' => 'VIVO'],
-['name' => 'Xiaomi 12 Pro', 'price' => 11999000, 'image' => 'https://www.mi.com/global/static/img/phone/12pro/12pro-hero.png', 'category' => 'XIAOMI'],
-['name' => 'Realme GT2 Pro', 'price' => 10999000, 'image' => 'https://www.realme.com/id/products/gt2-pro/images/gt2-pro-hero.png', 'category' => 'REALME'],
+['name' => 'Vivo X80 Pro', 'price' => 12999000, 'image' => 'https://th.bing.com/th/id/OIP.W7bzJOKwv7eDZiDOWJdDwgHaHa?rs=1&pid=ImgDetMain', 'category' => 'VIVO'],
+['name' => 'Xiaomi 15 Ultra', 'price' => 11999000, 'image' => 'https://th.bing.com/th/id/OIP.-IT2_zdKIZ3hHh0853WVvAHaHa?pid=ImgDet&w=185&h=185&c=7&dpr=1,3', 'category' => 'XIAOMI'],
+['name' => 'Realme GT7 Pro', 'price' => 10999000, 'image' => 'https://image01.realme.net/general/20250522/17478892761986a7207924f9449b59872dd5a19aed71c.png.webp?width=1080&height=1080&size=866353', 'category' => 'REALME'],
 ];
 @endphp
 
